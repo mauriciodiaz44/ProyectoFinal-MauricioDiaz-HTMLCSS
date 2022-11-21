@@ -82,10 +82,7 @@ body{font-family: 'Source Sans Pro', sans-serif;}
 #home .carousel-item.active h2{
 	animation: fadeInLeft 0.5s ease forwards;
 }
-#home .carousel-item.active h4{
-	animation: fadeInRight 0.5s ease forwards;
-}
-#home .carousel-item.active button{
+#home .carousel-item.active h4, #home .carousel-item.active button{
 	animation: fadeInRight 0.5s ease forwards;
 }
 
@@ -93,9 +90,9 @@ body{font-family: 'Source Sans Pro', sans-serif;}
     margin: 5rem 0;
 }
 
-#premios .col-md-6{
-    padding: 3rem 0;
-    text-align: center;
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
 }
 
 /* BACKGROUND DE LAS PAGINAS ALBUMES Y VIDEOS */
@@ -119,6 +116,7 @@ body{font-family: 'Source Sans Pro', sans-serif;}
 
 .titulo{
     padding-top: 5rem;
+    animation: fadeInDown 0.5s ease forwards;
 }
 
 .albumes .row img{
@@ -162,7 +160,6 @@ body{font-family: 'Source Sans Pro', sans-serif;}
     overflow: hidden;
     position: relative;
     width: 100%;
-    margin: 12px 0;
 }
 
 .card-content {
@@ -198,6 +195,10 @@ body{font-family: 'Source Sans Pro', sans-serif;}
     color: #fff;
 }
 
+.tour_titulo h1{
+    animation: fadeInDown 0.5s ease forwards;
+}
+
 /* PAGINA NOSOTROS */
 
 #nosotros{
@@ -221,6 +222,7 @@ body{font-family: 'Source Sans Pro', sans-serif;}
     font-weight: 600;
     padding-top: 20rem;
     padding-left: 3rem;
+    animation: fadeInDown 0.5s ease forwards;
 }
 
 /* BACKGROUND A LAS TEXTOS */
@@ -344,6 +346,10 @@ body{font-family: 'Source Sans Pro', sans-serif;}
         width: 60%;
     }
 
+    #premios .card-text{
+        text-align: center !important;
+    }
+
     .display-3 {
         padding-left: 0;
         text-align: center;
@@ -376,10 +382,6 @@ body{font-family: 'Source Sans Pro', sans-serif;}
 
     #home .col-lg-5 .featurette-image {
         width: 80%;
-    }
-
-    #premios p{
-        font-size: 1rem;
     }
 
     /* PAGINA ALBUMES */
