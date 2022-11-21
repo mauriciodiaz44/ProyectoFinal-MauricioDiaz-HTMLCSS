@@ -1,94 +1,232 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/png" />
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Videos - Imagine Dragons</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/images/icon.png" type="image/png" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Videos - Imagine Dragons</title>
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <a href="../index.html" class="enlace">
-            <img src="../assets/images/imaginedragons.png" alt="logo" class="logo">
-            </a>
-            <nav class="navegacion">
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li>
-                        <a href="#">GALERIA</a>
-                        <ul class="submenu">
-                            <li><a href="./albumes.html">ÁLBUMES</a></li>
-                            <li><a href="#">VIDEOS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./tour.html">TOUR</a></li>
-                    <li><a href="./nosotros.html">NOSOTROS</a></li>
-                    <li><a href="./suscripcion.html">SUSCRIBIRSE</a></li>
-                </ul>
-            </nav>
-        </div> 
-    </header>
-    <main>
-        <section id="musica">
-            <div class="contenedor">
-                <div class="videoprincipal_contenedor">
-                    <div class="imagen_principal">
-                        <img src="../assets/images/bonelive.jpg" alt="Bones Imagine Dragon en Directo" class="imagen">
-                    </div>
-                    <div class="imagen_principal_titulo">
-                        <p>21 de Marzo de 2022</p>
-                        <h3>Imagine Dragons - Bones (Live from the<br>Climate Pledge Arena)</h3>
-                    </div>
-                </div>
-                <div class="videos_card">
-                    <figure class="videos_card_imagen">
-                        <img src="../assets/images/enemymontreal.jpg" alt="enemy montreal">
-                    </figure>
-                    <div class="videos_card_contenedor">
-                        <h5>Imagine Dragons x J.I.D - Enemy (Live<br>from Montreal 2022)</h5>
-                        <a href="https://www.youtube.com/watch?v=30AToHb1ZJM" target="_blank">VER</a>
-                    </div>
-                </div>
-                <div class="videos_card">
-                    <figure class="videos_card_imagen">
-                        <img src="../assets/images/idontlikemyself.jpg" alt="i dont like my self">
-                    </figure>
-                    <div class="videos_card_contenedor">
-                        <h5>Imagine Dragons - I Don’t Like Myself<br>(Official Music Video)</h5>
-                        <a href="https://www.youtube.com/watch?v=iH1YfDu19KM" target="_blank">VER</a>
-                    </div>
-                </div>
-                <div class="videos_card">
-                    <figure class="videos_card_imagen">
-                        <img src="../assets/images/ontopoftheworld.jpg" alt="on top of the world">
-                    </figure>
-                    <div class="videos_card_contenedor">
-                        <h5>Imagine Dragons - On Top Of The World<br>(Live from Red Rocks, 2013)</h5>
-                        <a href="https://www.youtube.com/watch?v=wBb_nAc4TPM" target="_blank">VER</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="pie-footer">
-        <div class="contenedor">
-            <div class="footer_logo">
-                <a href="#" class="logos">
-                    <img src="../assets/images/imaginedragons.png" alt="logo" class="logo">
-                </a>
-            </div>
-            <div class="redes">
-                <a href="https://www.facebook.com/ImagineDragons/" target="_blank">FACEBOOK</a>
-                <a href="https://www.instagram.com/imaginedragons/" target="_blank">INSTAGRAM</a>
-                <a href="https://twitter.com/Imaginedragons" target="_blank">TWITTER</a>
-                <a href="https://www.youtube.com/user/ImagineDragonsVEVO" target="_blank">YOUTUBE</a>
-                <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q" target="_blank">SPOTIFY</a>
-            </div>
-                <p class="footer_parrafo">Copyright © 2022 - Desarrollado por Mauricio Diaz</p>
+  <header>
+    <!--Navegacion con menu hamburguesa-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/images/imaginedragons.png" alt="logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                GALERIA
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./albumes.html">ÁLBUMES</a></li>
+                <li><a class="dropdown-item active" href="#">VIDEOS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tour.html">TOUR</a>
+            </li>                 
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./suscripcion.html">SUSCRIBETE</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+        <span class="border-bottom bg-light"></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="musica" class="videos">
+      <div class="container">
+        <!--Video principal-->
+        <div class="row align-items-center video-embed">
+          <div class="col-md-7">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/GAaWeM7EcnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <p class="lead">24 de Septiembre de 2022</p>
+            <a class="h4 fw-bold" href="https://www.youtube.com/watch?v=u0beuKgcgvk&ab_channel=ImagineDragonsVEVO">Imagine Dragons - "Bones" Live (Acoustic / TRF Gala 2022)</a>
+          </div>
+        <!--Titulo-->
+        </div>
+        <div class="text-start">
+          <h1 class="pt-5">VIDEOS</h1>
+          <hr class="featurette-divider bg-light my-3">
+        </div>
+        <!--Columnas de videos-->
+        <div class="row justify-content-around">
+          <!--primer video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/bonesremix.jpg" alt="bones remix official videoclip">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=ca8C6EQa5zc">Imagine Dragons - Bones (twocolors<br>Remix) [Official Remix Video]</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=ca8C6EQa5zc"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--segundo video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/enemymontreal.jpg" alt="enemy montreal live 2022">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=30AToHb1ZJM">Imagine Dragons x J.I.D - Enemy (Live<br>from Montreal 2022)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=30AToHb1ZJM"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--tercer video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/idontlikemyself.jpg" alt="i dont like my self official videoclip">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=iH1YfDu19KM">Imagine Dragons - I Don’t Like Myself<br>(Official Music Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=iH1YfDu19KM"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--cuarto video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/ontopoftheworld.jpg" alt="on top of the world official videoclip">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=wBb_nAc4TPM">Imagine Dragons - On Top Of The World<br>(Live from Red Rocks, 2013)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=wBb_nAc4TPM"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--quinto video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/theriver.jpg" alt="the river lyrics video">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=u2f89b5ha0o">Imagine Dragons - The River (Lyric<br>Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=u2f89b5ha0o"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--sexto video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/workingman.jpg" alt="working man lyrics video">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=vi2vBDVEYyY">Imagine Dragons - Working Man (Lyric<br> Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=vi2vBDVEYyY"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--septimo video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/everynight.jpg" alt="every night lyrics video">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=jrAqWeOGiaE">Imagine Dragons - Every Night (Lyric<br> Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=jrAqWeOGiaE"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--octavo video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/hearme.jpg" alt="hear me lyrics video">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=yg8lwoGx_mM">Imagine Dragons - Hear Me (Lyric Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=yg8lwoGx_mM"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--noveno video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/bleedingout.jpg" alt="bleeding out lyrics video">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=QFKHScAStsU">Imagine Dragons - Bleeding Out (Lyric<br> Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=QFKHScAStsU"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--decimo video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/idontmind.jpg" alt="i dont mind lyrics video">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=SIJsIaAOPQY">Imagine Dragons - I Don't Mind (Lyric<br> Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=SIJsIaAOPQY"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--decimo primer video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/demons.jpg" alt="demons lyrics video">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=pvrkfb1C4tE">Imagine Dragons - Demons (Lyric Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=pvrkfb1C4tE"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+          <!--decimo segundo video-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card-video">
+              <img src="../assets/images/tiptoe.jpg" alt="tiptoe lyrics video">
+              <div class="card-content">
+                <a class="h5 mb-3" target="_blank"  href="https://www.youtube.com/watch?v=C0IeIXVMDBI">Imagine Dragons - Tiptoe (Lyric Video)</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=C0IeIXVMDBI"><button type="button" class="btn btn-outline-light">VER</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pie-footer bg-dark">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+        <!--Logo del footer-->
+          <a href="#">
+            <img src="../assets/images/imaginedragons.png" alt="logo" class="footer-logo">
+          </a>
+        </div>
+        <!--Redes sociales-->
+        <div class="col-md-12">
+          <a href="https://www.facebook.com/ImagineDragons/" target="_blank">
+              <i class="fa-brands fa-facebook-f iconos"></i></a>
+          <a href="https://www.instagram.com/imaginedragons/" target="_blank">
+              <i class="fa-brands fa-instagram iconos"></i></a>
+          <a href="https://twitter.com/Imaginedragons" target="_blank">
+              <i class="fa-brands fa-twitter iconos"></i></a>
+          <a href="https://www.youtube.com/user/ImagineDragonsVEVO" target="_blank">
+              <i class="fa-brands fa-youtube iconos"></i></a>
+          <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q" target="_blank">
+              <i class="fa-brands fa-spotify iconos"></i></a>
+          <a href="https://music.apple.com/us/artist/imagine-dragons/358714030" target="_blank">
+              <i class="fa-brands fa-apple iconos"></i></a>    
+        </div>
+        <!--Parrafo de copyright-->
+        <div class="col-md-12">
+          <p class="fw-regular">Copyright © 2022 - Desarrollado por Mauricio Diaz</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a47995bca7.js" crossorigin="anonymous"></script>
 </body>
 </html>

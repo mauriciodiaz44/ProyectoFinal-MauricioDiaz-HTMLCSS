@@ -5,231 +5,307 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Tour - Imagine Dragons</title>
 </head>
 <body>
     <header>
-        <div class="contenedor">
-            <a href="../index.html" class="enlace">
-            <img src="../assets/images/imaginedragons.png" alt="logo" class="logo">
-            </a>
-            <nav class="navegacion">
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li>
-                        <a href="#">GALERIA</a>
-                        <ul class="submenu">
-                            <li><a href="./albumes.html">ÁLBUMES</a></li>
-                            <li><a href="./videos.html">VIDEOS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="active">TOUR</a></li>
-                    <li><a href="./nosotros.html">NOSOTROS</a></li>
-                    <li><a href="./suscripcion.html">SUSCRIBIRSE</a></li>
+        <!--Navegacion con menu hamburguesa-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3 sticky-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="../assets/images/imaginedragons.png" alt="logo" class="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      GALERIA
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./albumes.html">ÁLBUMES</a></li>
+                      <li><a class="dropdown-item" href="./videos.html">VIDEOS</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">TOUR</a>
+                  </li>                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./suscripcion.html">SUSCRIBETE</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>   
+              </div>
+              <span class="border-bottom bg-light"></span>
+            </div>
+          </nav>
     </header>
     <main>
         <section id="tour">
-            <div class="contenedor">
-                <div class="tour_textos">
-                    <h1>MERCURY TOUR</h1>
-                    <p><strong>TICKETS VIP:</strong> Experimenta Imagine Dragons como VIP en su Mercury Tour 2022, accediendo con una plataforma privada, 
+            <div class="container">
+                <!--Titulo principal y oferta vip-->
+                <div class="tour_titulo text-center mb-5">
+                    <h1 class="mb-3">MERCURY TOUR</h1>
+                    <p class="mb-1"><strong>TICKETS VIP:</strong> Experimenta Imagine Dragons como VIP en su Mercury Tour 2022, accediendo con una plataforma privada, 
                         actividades interactivas, nuevas experiencias inmersivas en el Mercury Lounge y mucho más. 
                         Hay paquetes exclusivos disponibles,
                         y todos los paquetes incluyen un boleto premium para el espectáculo y artículos VIP de edición limitada.</p>
                     <a href="https://livemu.sc/ImagineDragons-VIP"
                     target="_blank">Comprar Mercury Tour VIP ahora ></a>
                 </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>OCT</h5>
-                        <h1>21</h1>
+                <!--Columnas de fechas de conciertos-->
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">DEC</h5>
+                        <h1 class="lh-1">02</h1>
                     </div>
-                    <div class="lugar">
-                        <h5>SANTIAGO, CHILE</h5>
-                        <p>ESTADIO BICENTENARIO DE LA FLORIDA</p>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>WASHINGTON, DC</h5>
                     </div>
-                    <div class="boton-tickets"><a
-                    href="https://www.ticketmaster.cl/event/imagine-dragons-mercury-world-tour"
-                    target="_blank">TICKETS</a>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>CAPITAL ONE ARENA</p>
                     </div>
-                </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>OCT</h5>
-                        <h1>23</h1>
-                    </div>
-                    <div class="lugar">
-                        <h5>BUENOS AIRES, ARGENTINA</h5>
-                        <p>COSTANERA SUR</p>
-                    </div>
-                    <div class="boton-tickets"><a
-                    href="https://www.allaccess.com.ar/event/imagine-dragons"
-                    target="_blank">TICKETS</a>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.ticketmaster.com/event/15005D34B0EA1EE0"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
                     </div>
                 </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>OCT</h5>
-                        <h1>25</h1>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">ENE</h5>
+                        <h1 class="lh-1">24</h1>
                     </div>
-                    <div class="lugar">
-                        <h5>CURITIBA, BRAZIL</h5>
-                        <p>PEDREIRA PAULO LEMINSKI</p>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>ZALLAQ, BARÉIN</h5>
                     </div>
-                    <div class="boton-tickets"><a
-                    href="https://www.eventim.com.br/campaign/imaginedragons"
-                    target="_blank">TICKETS</a>
-                    </div>
-                </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>OCT</h5>
-                        <h1>27</h1>
-                    </div>
-                    <div class="lugar">
-                        <h5>SÃO PAULO, BRAZIL</h5>
-                        <p>ALLIANZ PARQUE</p>
-                    </div>
-                    <div class="boton-tickets"><a
-                    href="https://www.eventim.com.br/campaign/imaginedragons"
-                    target="_blank">TICKETS</a>
-                    </div>
-                </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>OCT</h5>
-                        <h1>29</h1>
-                    </div>
-                    <div class="lugar">
-                        <h5>RIO DE JANEIRO, BRAZIL</h5>
-                        <p>ÁREA EXTERNA DA JEUNESSE ARENA</p>
-                    </div>
-                    <div class="boton-tickets"><a
-                    href="https://www.eventim.com.br/campaign/imaginedragons"
-                    target="_blank">TICKETS</a>
-                    </div>
-                </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>NOV</h5>
-                        <h1>1</h1>
-                    </div>
-                    <div class="lugar">
-                        <h5>MEXICO CITY, MEXICO</h5>
-                        <p>PALACIO DE LOS DEPORTES</p>
-                    </div>
-                    <div class="boton-tickets"><a
-                    href="https://www.ticketmaster.com.mx/artist/1435919"
-                    target="_blank">TICKETS</a>
-                    </div>
-                </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>NOV</h5>
-                        <h1>2</h1>
-                    </div>
-                    <div class="lugar">
-                        <h5>MEXICO CITY, MEXICO</h5>
-                        <p>PALACIO DE LOS DEPORTES</p>
-                    </div>
-                    <div class="boton-tickets"><a
-                    href="https://www.ticketmaster.com.mx/artist/1435919"
-                    target="_blank">TICKETS</a>
-                    </div>
-                </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>NOV</h5>
-                        <h1>4</h1>
-                    </div>
-                    <div class="lugar">
-                        <h5>MEXICO CITY, MEXICO</h5>
-                        <p>PALACIO DE LOS DEPORTES</p>
-                    </div>
-                    <div class="boton-tickets"><a
-                    href="https://www.ticketmaster.com.mx/artist/1435919"
-                    target="_blank">TICKETS</a>
-                    </div>
-                </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>ENE</h5>
-                        <h1>24</h1>
-                    </div>
-                    <div class="lugar">
-                        <h5>ZALLAQ, BAHRAIN</h5>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
                         <p>AL DANA AMPHITHEATRE</p>
                     </div>
-                    <div class="boton-tickets"><a
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
                     href="https://manama.platinumlist.net/event-tickets/84790/imagine-dragons-mercury-world-tour-in-manama?&"
-                    target="_blank">TICKETS</a>
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
                     </div>
                 </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>ENE</h5>
-                        <h1>26</h1>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">ENE</h5>
+                        <h1 class="lh-1">26</h1>
                     </div>
-                    <div class="lugar">
-                        <h5>ABU DHABI, UNITED ARAB EMIRATES</h5>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>ABU DHABI, UAE</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
                         <p>AE ETIHAD ARENA</p>
                     </div>
-                    <div class="boton-tickets"><a
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
                     href="https://www.ticketmaster.ae/event/9259?brand=me_livenation&brand=me_livenation"
-                    target="_blank">TICKETS</a>
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
                     </div>
                 </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>FEB</h5>
-                        <h1>1</h1>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">FEB</h5>
+                        <h1 class="lh-1">01</h1>
                     </div>
-                    <div class="lugar">
-                        <h5>CAPE TOWN, SOUTH AFRICA</h5>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>CAPE TOWN, SUDÁFRICA</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
                         <p>DHL STADIUM</p>
                     </div>
-                    <div class="boton-tickets"><a
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
                     href="https://www.ticketmaster.co.za/artist/imagine-dragons-tickets/389123"
-                    target="_blank">TICKETS</a>
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
                     </div>
                 </div>
-                <div class="fechas">
-                    <div class="fecha">
-                        <h5>FEB</h5>
-                        <h1>4</h1>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">FEB</h5>
+                        <h1 class="lh-1">04</h1>
                     </div>
-                    <div class="lugar">
-                        <h5>JOHANNESBURG, SOUTH AFRICA</h5>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>JOHANNESBURGO, SUDÁFRICA</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
                         <p>FNB STADIUM</p>
                     </div>
-                    <div class="boton-tickets"><a
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
                     href="https://www.ticketmaster.co.za/artist/imagine-dragons-tickets/389123"
-                    target="_blank">TICKETS</a>
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
+                    </div>
+                </div>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">FEB</h5>
+                        <h1 class="lh-1">28</h1>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>SÃO PAULO, BR</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>ALLIANZ PARQUE</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.eventim.com.br/imaginedragons/"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
+                    </div>
+                </div>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">MAR</h5>
+                        <h1 class="lh-1">02</h1>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>CURITIBA, BR</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>PEDREIRA PAULO LEMINSKI</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.eventim.com.br/imaginedragons/"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
+                    </div>
+                </div>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">MAR</h5>
+                        <h1 class="lh-1">04</h1>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>RIO DE JANEIRO, BR</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>ARENA EXTERNA JEUNESSE</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.eventim.com.br/imaginedragons/"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
+                    </div>
+                </div>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">MAR</h5>
+                        <h1 class="lh-1">07</h1>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>SANTIAGO, CL</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>ESTADIO BICENTENARIO</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.ticketmaster.cl/event/imagine-dragons-mercury-world-tour"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
+                    </div>
+                </div>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">MAR</h5>
+                        <h1 class="lh-1">09</h1>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>BUENOS AIRES, AR</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>CAMPO DE POLO</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.allaccess.com.ar/event/imagine-dragons"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
+                    </div>
+                </div>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">MAR</h5>
+                        <h1 class="lh-1">12</h1>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>BOGOTÁ, CO</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>COLISEO LIVE</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.taquillalive.com/performance-details/?event=TCL.EVN51.PRF1"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
+                    </div>
+                </div>
+                <div class="row text-dark mb-4">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">MAY</h5>
+                        <h1 class="lh-1">17</h1>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>MEXICO CITY, MX</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>FORO SOL</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.ticketmaster.com.mx/artist/1435919"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
+                    </div>
+                </div>
+                <div class="row text-dark pb-5">
+                    <div class="col-md-1 col-sm-12 text-center justify-content-center bg-dark text-white py-2">
+                        <h5 class="lh-1">JUL</h5>
+                        <h1 class="lh-1">08</h1>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <h5>MILWAUKEE, WI</h5>
+                    </div>
+                    <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2">
+                        <p>AMERICAN FAMILY INSURANCE AMPHITHEATER DURING SUMMERFEST</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center bg-light py-2"><a
+                    href="https://www.ticketmaster.com/event/07005D689BED1C00"
+                    target="_blank" class="text-dark"><i class="fa-solid fa-ticket"></i> TICKETS</a>
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>
     </main>
-    <footer class="pie-footer">
-        <div class="contenedor">
-            <div class="footer_logo">
-                <a href="#" class="logos">
-                    <img src="../assets/images/imaginedragons.png" alt="logo" class="logo">
+    <footer class="pie-footer bg-dark">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-md-12">
+              <!--Logo del footer-->
+                <a href="#">
+                  <img src="../assets/images/imaginedragons.png" alt="logo" class="footer-logo">
                 </a>
+              </div>
+              <!--Redes sociales-->
+              <div class="col-md-12">
+                <a href="https://www.facebook.com/ImagineDragons/" target="_blank">
+                    <i class="fa-brands fa-facebook-f iconos"></i></a>
+                <a href="https://www.instagram.com/imaginedragons/" target="_blank">
+                    <i class="fa-brands fa-instagram iconos"></i></a>
+                <a href="https://twitter.com/Imaginedragons" target="_blank">
+                    <i class="fa-brands fa-twitter iconos"></i></a>
+                <a href="https://www.youtube.com/user/ImagineDragonsVEVO" target="_blank">
+                    <i class="fa-brands fa-youtube iconos"></i></a>
+                <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q" target="_blank">
+                    <i class="fa-brands fa-spotify iconos"></i></a>
+                <a href="https://music.apple.com/us/artist/imagine-dragons/358714030" target="_blank">
+                    <i class="fa-brands fa-apple iconos"></i></a>    
+              </div>
+              <!--Parrafo de copyright-->
+              <div class="col-md-12">
+                <p class="fw-regular">Copyright © 2022 - Desarrollado por Mauricio Diaz</p>
+              </div>
             </div>
-            <div class="redes">
-                <a href="https://www.facebook.com/ImagineDragons/" target="_blank">FACEBOOK</a>
-                <a href="https://www.instagram.com/imaginedragons/" target="_blank">INSTAGRAM</a>
-                <a href="https://twitter.com/Imaginedragons" target="_blank">TWITTER</a>
-                <a href="https://www.youtube.com/user/ImagineDragonsVEVO" target="_blank">YOUTUBE</a>
-                <a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q" target="_blank">SPOTIFY</a>
-            </div>
-                <p class="footer_parrafo">Copyright © 2022 - Desarrollado por Mauricio Diaz</p>
-        </div>
+          </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a47995bca7.js" crossorigin="anonymous"></script>
 </body>
 </html>
