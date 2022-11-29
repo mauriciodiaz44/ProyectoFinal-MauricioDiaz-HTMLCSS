@@ -160,6 +160,7 @@ body{font-family: 'Source Sans Pro', sans-serif;}
     overflow: hidden;
     position: relative;
     width: 100%;
+    border: 16px solid #181818;
 }
 
 .card-content {
