@@ -1,0 +1,33 @@
+@import "variables";
+
+header{
+    .navbar{
+        background: $color-dark;
+        padding: 1rem 0;
+        .container{
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between;
+            .navbar-brand{
+                font-size: 0;
+                .logo{
+                    height: 30px;
+
+                    @include mobile{
+                        height: 25px;
+                    }
+
+                    @include mobile-small{
+                        height: 20px;
+                    }
+                }
+            }
+            .navbar-collapse{
+                .ms-auto{
+                    margin-left: auto !important;
+                }
+            }
+        }
+    }
+}
