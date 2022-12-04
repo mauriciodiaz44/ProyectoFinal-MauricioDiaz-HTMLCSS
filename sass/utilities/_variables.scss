@@ -1,0 +1,55 @@
+$screen-tablet: 768px;
+$screen-mobile: 425px;
+$screen-mobile-small: 375px;
+
+$ancho: 100%;
+$alto: 100%;
+
+$img-albumes: 18em;
+
+$color-dark: #181818;
+$color-white: #fff;
+$color-hover: rgb(145, 145, 145);
+
+$transicion-hover: all 0.3s ease;
+$transicion: .5s;
+
+$animacion-arriba: fadeInDown 0.5s ease forwards;;
+$animacion-derecha: fadeInLeft 0.5s ease forwards;
+$animacion-izquierda: fadeInRight 0.5s ease forwards;
+
+$espaciado-principal: 5rem;
+$espaciado-secundario: 3rem;
+$borde: 15px solid #181818;
+
+$flex : flex;
+$justify:center;
+$row: row;
+$space-around :space-around;
+$space-between:space-between;
+$column:column;
+$space-evenly:space-evenly;
+
+$fuente-peque: .8rem;
+$fuente-chiquita: 1rem;
+$fuente-normal: 1.25rem;
+$fuente-grande: 1.75rem;
+
+$text-underline: underline;
+$text-none: none;
+
+$fuente-negrita: 600;
+$text-align-start: start;
+$text-center: center;
+
+$tipografia-general: 'Source Sans Pro', sans-serif;
+$tipografia-parrafo: 'Jost', sans-serif;
+
+$fuentes:(
+    thin:100,
+    light:300,
+    regular:400,
+    medium:500,
+    bold:700,
+    black:900
+);

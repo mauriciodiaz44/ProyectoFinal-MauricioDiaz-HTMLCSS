@@ -2,4 +2,12 @@ html {
     scroll-behavior: smooth; }
 
 body{
-    font-family: $tipografia-general; }
+    font-family: $tipografia-general;
+    h1, h2, .h1, .h2{
+        font-weight: $fuente-negrita;
+        color: $color-white;
+    }
+    p{
+        font-family: $tipografia-parrafo;
+    }
+}

@@ -1,0 +1,124 @@
+@import "../utilities/mixins";
+
+#home{
+    background: $color-dark;
+    .bg-img-1{
+        background-image: url('../assets/images/slide1.jpg');
+    }
+    .bg-img-2{
+        background-image: url('../assets/images/slide2.png');
+    }
+    .bg-img-3{
+        background-image: url('../assets/images/slide3.jpg');
+    }
+    .carousel-item{
+        min-height: 90vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        .container{
+            @include centrarAbsolute;
+            text-align: $text-align-start;
+            @include mobile{
+                text-align: $text-center;
+            }
+            h2{
+                @include mobile{
+                    font-size: $fuente-normal;
+                }
+            }
+            .carousel-titulo{
+                color: $color-white;
+                font-weight: $fuente-normal;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .carousel-item:before{
+        @include before;
+        background-color: rgba(0,0,0,0.4);
+        z-index: -1;
+    }
+    .active{
+        h2{
+            animation: $animacion-izquierda;
+        }
+        h4, button{
+            animation: $animacion-derecha;
+        }
+    }
+    .featurette{
+        @include centrarContenido;
+        color: $color-white;
+        text-align: $text-center;
+        .col-lg-7{
+            .sub-parrafo{
+                margin: 3rem 0 1rem;
+                @include mobile{
+                    margin: 1.5rem 0 1rem;
+                }
+            }
+            .parrafo, .sub-parrafo{
+                @include mobile{
+                    font-size: $fuente-chiquita;
+                }
+            }
+        }
+        .col-lg-5{
+            margin-top: 1rem;
+            .featurette-img{
+                @include mobile{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .videos-titulo{
+        .col-12{
+            padding: 3rem 0;
+            text-align: $text-center;
+            .h2{
+                font-weight: 300;
+                &:hover{
+                    color: $color-hover;
+                    transition: $transicion-hover; 
+                }
+            }
+        }
+    }
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+    background-color: $color-white;
+}
+
+.parrafo{
+    font-size: $fuente-normal;
+    font-weight: 300;
+    color: $color-white;
+    @include mobile{
+        font-size: $fuente-chiquita;
+    }
+}
+
+#premios{
+    background-color: $color-white;
+    .col-sm-6{
+        margin: 3rem 0;
+        .card{
+            height: $ancho;
+            .card-title{
+                text-align: $text-center;
+                font-size: $fuente-grande;
+                font-weight: $fuente-negrita;
+            }
+            .card-text{
+                @include mobile{
+                    text-align: $text-center;
+                }
+            }
+        }
+    }
+}
