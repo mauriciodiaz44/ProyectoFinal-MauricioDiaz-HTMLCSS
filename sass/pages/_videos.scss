@@ -1,9 +1,9 @@
 #videos{
-    @include banner('../assets/images/musica.jpg');
+    @include banner($banner-musica);
     padding-bottom: $espaciado-secundario;
     .video-embed{
         padding-top: $espaciado-principal;
-        align-items: center;
+        @include centrarContenido;
         iframe{
             box-shadow: 1px 1px 41px 6px rgba(0,0,0,0.71);
             -webkit-box-shadow: 1px 1px 41px 6px rgba(0,0,0,0.71);
@@ -11,11 +11,10 @@
         }
         .col-md-5{
             @include mobile{
-                text-align: $text-center;
                 padding: 2rem 0;
             }
             .h4{
-                font-weight: $fuente-negrita;
+                font-weight: map-get($fuentes,bold);
             }
         }
     }
@@ -35,13 +34,13 @@
         }
         .card-content {
             @include flex-direction-center(column);
-            position: absolute;
             text-align: $text-center;
+            position: absolute;
             top: 0;
             z-index: 2;
             width: $ancho;
             height: $alto;
-            background: rgba(0,0,0,0.8);
+            background: map-get($transparent-bg,8);
             opacity: 0;
             transition: $transicion;
         }

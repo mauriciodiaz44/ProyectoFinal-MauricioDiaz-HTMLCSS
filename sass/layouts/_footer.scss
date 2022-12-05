@@ -1,8 +1,6 @@
 @import "../utilities/variables";
 
 .pie-footer{
-    background: $color-dark;
-    color: $color-white;
     padding: 2rem 0;
     .container{
         text-align: $text-center;
@@ -23,10 +21,8 @@
                 transition: $transicion-hover; 
             }
         }
-        .parrafo{
-            font-size: $fuente-chiquita;
-            font-weight: 400;
-            color: $color-white;
+        .footer_parrafo{
+            @include parrafoEstilado($fuente-chiquita,map-get($fuentes,regular),$color-white);
             @include mobile-small{
                 font-size: $fuente-peque;
             }

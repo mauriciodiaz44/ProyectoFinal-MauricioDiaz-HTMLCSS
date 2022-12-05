@@ -1,4 +1,4 @@
-@mixin parrafoEstilado($anchoFuente,$grosorFuente,$color,$align){
+@mixin parrafoEstilado($anchoFuente,$grosorFuente,$color){
     font-size: $anchoFuente;
     font-weight: $grosorFuente;
     color: $color;
@@ -53,6 +53,12 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+}
+
+@each $background, $i in $backgrounds {
+    &.#{$background} {
+        background-color: $i;
+    }	
 }
 
 @mixin tablet {

@@ -2,7 +2,6 @@
 
 header{
     .navbar{
-        background: $color-dark;
         padding: 1rem 0;
         .container{
             display: flex;
@@ -21,11 +20,6 @@ header{
                     @include mobile-small{
                         height: 20px;
                     }
-                }
-            }
-            .navbar-collapse{
-                .ms-auto{
-                    margin-left: auto;
                 }
             }
         }

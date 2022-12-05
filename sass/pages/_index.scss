@@ -1,15 +1,21 @@
-@import "../utilities/mixins";
+
+.colorPrincipal{
+    color: $color-white;
+}
+
+.colorSecundario{
+    color: $color-dark;
+}
 
 #home{
-    background: $color-dark;
     .bg-img-1{
-        background-image: url('../assets/images/slide1.jpg');
+        background-image: url(map-get($sliders,1));
     }
     .bg-img-2{
-        background-image: url('../assets/images/slide2.png');
+        background-image: url(map-get($sliders,2));
     }
     .bg-img-3{
-        background-image: url('../assets/images/slide3.jpg');
+        background-image: url(map-get($sliders,3));
     }
     .carousel-item{
         min-height: 90vh;
@@ -19,25 +25,19 @@
         z-index: 1;
         .container{
             @include centrarAbsolute;
-            text-align: $text-align-start;
-            @include mobile{
-                text-align: $text-center;
-            }
             h2{
                 @include mobile{
                     font-size: $fuente-normal;
                 }
             }
             .carousel-titulo{
-                color: $color-white;
-                font-weight: $fuente-normal;
                 margin-bottom: 0.5rem;
             }
         }
     }
     .carousel-item:before{
         @include before;
-        background-color: rgba(0,0,0,0.4);
+        background-color: map-get($transparent-bg,4);
         z-index: -1;
     }
     .active{
@@ -50,16 +50,9 @@
     }
     .featurette{
         @include centrarContenido;
-        color: $color-white;
-        text-align: $text-center;
         .col-lg-7{
-            .sub-parrafo{
-                margin: 3rem 0 1rem;
-                @include mobile{
-                    margin: 1.5rem 0 1rem;
-                }
-            }
-            .parrafo, .sub-parrafo{
+            text-align: $text-center;
+            .parrafo{
                 @include mobile{
                     font-size: $fuente-chiquita;
                 }
@@ -67,7 +60,11 @@
         }
         .col-lg-5{
             margin-top: 1rem;
+            @include alineacion-flex(center,center);
             .featurette-img{
+                @include tablet{
+                    width: 60%;
+                }
                 @include mobile{
                     width: 80%;
                 }
@@ -75,11 +72,11 @@
         }
     }
     .videos-titulo{
+        text-align: $text-center;
         .col-12{
             padding: 3rem 0;
-            text-align: $text-center;
             .h2{
-                font-weight: 300;
+                font-weight: map-get($fuentes,light);
                 &:hover{
                     color: $color-hover;
                     transition: $transicion-hover; 
@@ -91,12 +88,11 @@
 
 .featurette-divider {
     margin: 5rem 0;
-    background-color: $color-white;
 }
 
 .parrafo{
     font-size: $fuente-normal;
-    font-weight: 300;
+    font-weight: map-get($fuentes,light);
     color: $color-white;
     @include mobile{
         font-size: $fuente-chiquita;
@@ -104,20 +100,13 @@
 }
 
 #premios{
-    background-color: $color-white;
     .col-sm-6{
         margin: 3rem 0;
         .card{
             height: $ancho;
             .card-title{
+                @include parrafoEstilado($fuente-grande,map-get($fuentes,bold),$color-dark);
                 text-align: $text-center;
-                font-size: $fuente-grande;
-                font-weight: $fuente-negrita;
-            }
-            .card-text{
-                @include mobile{
-                    text-align: $text-center;
-                }
             }
         }
     }

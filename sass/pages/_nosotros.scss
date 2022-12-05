@@ -1,5 +1,5 @@
 #nosotros{
-    @include banner('../assets/images/nosotros.jpg');
+    @include banner($banner-nosotros);
     .nosotros_titulo{
         font-size: calc(1.525rem + 3.3vw);
         line-height: 1.2;
@@ -7,17 +7,18 @@
         padding-left: 3rem;
         animation: $animacion-arriba;
         @include tablet{
-            text-align: $text-center;
-            font-size: 3rem;
+            padding-left: 1rem;
+        }
+        @include mobile{
             padding-left: 0;
         }
     }
     .nosotros_bg{
-        background-color: rgba(0,0,0,0.5);
+        background-color: map-get($transparent-bg,5);
         padding: 1em 0;
         .nosotros_parrafo{
-            @include parrafoEstilado(1rem,map-get($fuentes,light),$color-white,$text-align-start);
-            background: rgba(0,0,0,0.6);
+            @include parrafoEstilado(1rem,map-get($fuentes,light),$color-white);
+            background: map-get($transparent-bg,6);
             padding: 1em;
             margin: 0 3em;
             @include tablet{
@@ -33,23 +34,22 @@
             width: $ancho;
             img{
                 width: $ancho;
-                height: 584px;
+                height: $img-perfiles;
                 object-fit: cover;
             }
             .profile_content{
                 position: absolute;
                 bottom: 0;
-                background: rgba(0,0,0,0.8);
+                background: map-get($transparent-bg,8);
                 padding: 2em 1em;
                 width: $ancho;
-                color: $color-white;
                 z-index: 2;
                 text-align: $text-align-start;
             }
             &:before{
                 @include before;
                 opacity: 0;
-                transition: .5s;
+                transition: $transicion;
                 z-index: 3;
                 background: radial-gradient(circle at 24.1% 68.8%, rgba(50, 50, 50, 0.3) 0%, rgba(0, 0, 0, 0.7) 99.4%);
             }

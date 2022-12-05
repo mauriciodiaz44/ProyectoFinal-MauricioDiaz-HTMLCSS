@@ -1,5 +1,5 @@
 #albumes{
-    @include banner('../assets/images/musica.jpg');
+    @include banner($banner-musica);
     padding-bottom: $espaciado-secundario;
     .titulo_albumes{
         padding-top: $espaciado-principal;
@@ -10,14 +10,11 @@
         margin: 0.25rem 0;
     }
     .row{
-        background-color: rgba(0,0,0,0.6);
-        border-radius: 10px;
+        background-color: map-get($transparent-bg,6);
+        border-radius: $border-rd;
         padding: 2em 0;
         margin: 2em auto auto auto;
         align-items: center;
-        @include mobile{
-            text-align: $text-center;
-        }
         .col-xxl-4{
             text-align: $text-center;
             img{
@@ -31,7 +28,7 @@
         }
         .btn{
             @include mobile{
-                width: 100%;
+                width: $ancho;
                 height: 3rem;
             }
         }

@@ -1,9 +1,8 @@
 #tour{
     width: $ancho;
     height: $alto;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background: $banner-tour;
     .tour_texto{
-        color: $color-white;
         padding-top: $espaciado-principal;
         text-align: $text-center;
         margin-bottom: 3rem;
@@ -33,6 +32,9 @@
             @include centrarContenido;
             background-color: $color-white;
             padding: 0.5rem 0;
+            h5{
+                font-weight: map-get($fuentes,mediumBold);
+            }
             .tickets{
                 color: $color-dark;
                 &:hover{
