@@ -12,6 +12,54 @@
   list-style: none;
   box-sizing: border-box; }
 
+.boton, .boton2 {
+  padding: 10px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #181818;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 500;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden; }
+
+.boton::before, .boton2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #181818;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms; }
+
+.boton:hover, .boton2:hover {
+  color: #e8e8e8;
+  border: 1px solid #fff; }
+
+.boton:hover::before, .boton2:hover::before {
+  width: 100%; }
+
+.boton2 {
+  color: #fff;
+  background: #181818; }
+
+.boton2::before {
+  color: #181818;
+  background: #e8e8e8; }
+
+.boton2:hover {
+  color: #181818;
+  border: 1px solid #181818; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -348,7 +396,7 @@ header .navbar {
         background: rgba(0, 0, 0, 0.8);
         padding: 2em 1em;
         width: 100%;
-        z-index: 2;
+        z-index: 3;
         text-align: start; }
       #nosotros .row .profile:before {
         content: '';
@@ -359,7 +407,7 @@ header .navbar {
         height: 100%;
         opacity: 0;
         transition: 0.5s;
-        z-index: 3;
+        z-index: 2;
         background: radial-gradient(circle at 24.1% 68.8%, rgba(50, 50, 50, 0.3) 0%, rgba(0, 0, 0, 0.7) 99.4%); }
       #nosotros .row .profile:hover:before {
         opacity: 1; }
@@ -387,3 +435,14 @@ header .navbar {
       #suscripcion .container .form-box .row {
         justify-content: center;
         text-align: start; }
+
+#error {
+  height: 100vh;
+  width: 100vw; }
+  #error .container {
+    justify-content: center;
+    text-align: center;
+    padding: 12rem 0; }
+    #error .container .titulo_error {
+      margin-bottom: 5rem;
+      font-size: 5rem; }

@@ -43,14 +43,14 @@
                 background: map-get($transparent-bg,8);
                 padding: 2em 1em;
                 width: $ancho;
-                z-index: 2;
+                z-index: 3;
                 text-align: $text-align-start;
             }
             &:before{
                 @include before;
                 opacity: 0;
                 transition: $transicion;
-                z-index: 3;
+                z-index: 2;
                 background: radial-gradient(circle at 24.1% 68.8%, rgba(50, 50, 50, 0.3) 0%, rgba(0, 0, 0, 0.7) 99.4%);
             }
             &:hover:before{

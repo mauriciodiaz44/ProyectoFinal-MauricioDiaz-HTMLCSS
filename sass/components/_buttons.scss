@@ -1,0 +1,60 @@
+.boton {
+    padding: 10px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: $color-dark;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: map-get($fuentes,medium);
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .boton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: $color-dark;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .boton:hover {
+    color: #e8e8e8;
+    border: 1px solid $color-white;
+   }
+   
+   .boton:hover::before {
+    width: 100%;
+   }
+
+   .boton2 {
+    @extend .boton;
+    color: $color-white;
+    background: $color-dark;
+   }
+
+   .boton2::before {
+    @extend .boton::before;
+    color: $color-dark;
+    background: #e8e8e8;
+   }
+
+   .boton2:hover{
+    color: $color-dark;
+    border: 1px solid $color-dark;
+   }
+
+   .boton2:hover::before {
+    @extend .boton:hover::before;
+   }

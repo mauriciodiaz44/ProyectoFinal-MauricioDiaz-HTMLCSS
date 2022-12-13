@@ -1,0 +1,12 @@
+#error{
+    height: 100vh;
+    width: 100vw;
+    .container{
+        @include alineacion-flex(center,center);
+        padding: 12rem 0;
+        .titulo_error{
+            margin-bottom: 5rem;
+            font-size: 5rem;
+        }
+    }
+}
