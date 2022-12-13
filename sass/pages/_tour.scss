@@ -1,0 +1,47 @@
+#tour{
+    width: $ancho;
+    height: $alto;
+    background: $banner-tour;
+    .tour_texto{
+        padding-top: $espaciado-principal;
+        text-align: $text-center;
+        margin-bottom: 3rem;
+        .tour_titulo{
+            margin-bottom: 1rem;
+            animation: $animacion-arriba;
+        }
+        .tour_vip{
+            color: $color-hover;
+            &:hover{
+                color: $color-white;
+                transition: $transicion-hover;
+                text-decoration: $text-underline;
+            }
+        }
+    }
+    .row{
+        color: $color-dark;
+        margin-bottom: 1.5rem;
+        .col-md-1{
+            text-align: $text-center;
+            background-color: $color-dark;
+            color: $color-white;
+            padding: 0.5rem 0;
+        }
+        .col-md-3, .col-md-5{
+            @include centrarContenido;
+            background-color: $color-white;
+            padding: 0.5rem 0;
+            h5{
+                font-weight: map-get($fuentes,mediumBold);
+            }
+            .tickets{
+                color: $color-dark;
+                &:hover{
+                    color: $color-hover;
+                    transition: $transicion-hover;
+                }
+            }
+        }
+    }
+}

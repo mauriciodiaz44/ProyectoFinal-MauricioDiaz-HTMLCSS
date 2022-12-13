@@ -1,0 +1,36 @@
+#albumes{
+    @include banner($banner-musica);
+    padding-bottom: $espaciado-secundario;
+    .titulo_albumes{
+        padding-top: $espaciado-principal;
+        animation: $animacion-arriba;
+        text-align: $text-center;
+    }
+    .featurette-divider{
+        margin: 0.25rem 0;
+    }
+    .row{
+        background-color: map-get($transparent-bg,6);
+        border-radius: $border-rd;
+        padding: 2em 0;
+        margin: 2em auto auto auto;
+        align-items: center;
+        .col-xxl-4{
+            text-align: $text-center;
+            img{
+                height: $img-albumes;
+            }
+        }
+        .parrafo{
+            @include mobile{
+                margin-top: 1rem;
+            }
+        }
+        .btn{
+            @include mobile{
+                width: $ancho;
+                height: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth; }
+
+main{
+    @include mobile{
+        text-align: $text-center;
+    }
+}
+
+body{
+    font-family: $tipografia-general;
+    h1, h2, .h1, .h2{
+        font-weight: map-get($fuentes,mediumBold);
+        color: $color-white;
+    }
+    p{
+        font-family: $tipografia-parrafo;
+    }
+}

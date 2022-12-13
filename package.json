@@ -1,0 +1,25 @@
+{
+  "name": "imdg",
+  "version": "1.0.0",
+  "description": "proyecto banda musical 'Imagine Dragons'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciodiaz44/PreEntrega3-MauricioDiaz.git"
+  },
+  "author": "mauriciodiaz44",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauriciodiaz44/PreEntrega3-MauricioDiaz/issues"
+  },
+  "homepage": "https://github.com/mauriciodiaz44/PreEntrega3-MauricioDiaz#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

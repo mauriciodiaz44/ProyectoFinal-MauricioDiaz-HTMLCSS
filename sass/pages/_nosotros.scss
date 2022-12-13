@@ -1,0 +1,61 @@
+#nosotros{
+    @include banner($banner-nosotros);
+    .nosotros_titulo{
+        font-size: calc(1.525rem + 3.3vw);
+        line-height: 1.2;
+        padding-top: 20rem;
+        padding-left: 3rem;
+        animation: $animacion-arriba;
+        @include tablet{
+            padding-left: 1rem;
+        }
+        @include mobile{
+            padding-left: 0;
+        }
+    }
+    .nosotros_bg{
+        background-color: map-get($transparent-bg,5);
+        padding: 1em 0;
+        .nosotros_parrafo{
+            @include parrafoEstilado(1rem,map-get($fuentes,light),$color-white);
+            background: map-get($transparent-bg,6);
+            padding: 1em;
+            margin: 0 3em;
+            @include tablet{
+                margin: 0 1em;
+            }
+        }
+    }
+    .row{
+        @include alineacion-flex(center,$text-center);
+        .profile{
+            overflow: hidden;
+            position: relative;
+            width: $ancho;
+            img{
+                width: $ancho;
+                height: $img-perfiles;
+                object-fit: cover;
+            }
+            .profile_content{
+                position: absolute;
+                bottom: 0;
+                background: map-get($transparent-bg,8);
+                padding: 2em 1em;
+                width: $ancho;
+                z-index: 3;
+                text-align: $text-align-start;
+            }
+            &:before{
+                @include before;
+                opacity: 0;
+                transition: $transicion;
+                z-index: 2;
+                background: radial-gradient(circle at 24.1% 68.8%, rgba(50, 50, 50, 0.3) 0%, rgba(0, 0, 0, 0.7) 99.4%);
+            }
+            &:hover:before{
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+
+.colorPrincipal{
+    color: $color-white;
+}
+
+.colorSecundario{
+    color: $color-dark;
+}
+
+#home{
+    .bg-img-1{
+        background-image: url(map-get($sliders,1));
+    }
+    .bg-img-2{
+        background-image: url(map-get($sliders,2));
+    }
+    .bg-img-3{
+        background-image: url(map-get($sliders,3));
+    }
+    .carousel-item{
+        min-height: 90vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        .container{
+            @include centrarAbsolute;
+            h2{
+                @include mobile{
+                    font-size: $fuente-normal;
+                }
+            }
+            .carousel-titulo{
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .carousel-item:before{
+        @include before;
+        background-color: map-get($transparent-bg,4);
+        z-index: -1;
+    }
+    .active{
+        h2{
+            animation: $animacion-izquierda;
+        }
+        h4, button{
+            animation: $animacion-derecha;
+        }
+    }
+    .featurette{
+        @include centrarContenido;
+        .col-lg-7{
+            text-align: $text-center;
+            .parrafo{
+                @include mobile{
+                    font-size: $fuente-chiquita;
+                }
+            }
+        }
+        .col-lg-5{
+            margin-top: 1rem;
+            @include alineacion-flex(center,center);
+            .featurette-img{
+                @include tablet{
+                    width: 60%;
+                }
+                @include mobile{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .videos-titulo{
+        text-align: $text-center;
+        .col-12{
+            padding: 3rem 0;
+            .h2{
+                font-weight: map-get($fuentes,light);
+                &:hover{
+                    color: $color-hover;
+                    transition: $transicion-hover; 
+                }
+            }
+        }
+    }
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.parrafo{
+    font-size: $fuente-normal;
+    font-weight: map-get($fuentes,light);
+    color: $color-white;
+    @include mobile{
+        font-size: $fuente-chiquita;
+    }
+}
+
+#premios{
+    .col-sm-6{
+        margin: 3rem 0;
+        .card{
+            height: $ancho;
+            .card-title{
+                @include parrafoEstilado($fuente-grande,map-get($fuentes,bold),$color-dark);
+                text-align: $text-center;
+            }
+        }
+    }
+}

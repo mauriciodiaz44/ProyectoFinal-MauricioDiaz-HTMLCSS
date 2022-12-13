@@ -1,0 +1,85 @@
+$screen-tablet: 768px;
+$screen-mobile: 425px;
+$screen-mobile-small: 375px;
+
+$banner-musica: '../assets/images/musica.jpg';
+$banner-tour: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+$banner-nosotros: '../assets/images/nosotros.jpg';
+$banner-suscribete: '../assets/images/suscripcion.jpg';
+
+$ancho: 100%;
+$alto: 100%;
+
+$img-albumes: 18em;
+$img-perfiles: 584px;
+
+$color-dark: #181818;
+$color-white: #fff;
+$color-hover: rgb(145, 145, 145);
+
+$transicion-hover: all 0.3s ease;
+$transicion: .5s;
+
+$animacion-arriba: fadeInDown 0.5s ease forwards;;
+$animacion-derecha: fadeInLeft 0.5s ease forwards;
+$animacion-izquierda: fadeInRight 0.5s ease forwards;
+
+$espaciado-principal: 5rem;
+$espaciado-secundario: 3rem;
+
+$borde: 15px solid #181818;
+$border-rd: 10px;
+
+$flex : flex;
+$justify:center;
+$row: row;
+$space-around :space-around;
+$space-between:space-between;
+$column:column;
+$space-evenly:space-evenly;
+
+$fuente-peque: .8rem;
+$fuente-chiquita: 1rem;
+$fuente-normal: 1.25rem;
+$fuente-grande: 1.75rem;
+
+$text-underline: underline;
+$text-none: none;
+
+$text-align-start: start;
+$text-center: center;
+
+$tipografia-general: 'Source Sans Pro', sans-serif;
+$tipografia-parrafo: 'Jost', sans-serif;
+
+$sliders:(
+    1:'../assets/images/slide1.jpg',
+    2:'../assets/images/slide2.png',
+    3:'../assets/images/slide3.jpg'
+);
+
+$fuentes:(
+    thin:100,
+    light:300,
+    regular:400,
+    medium:500,
+    mediumBold:600,
+    bold:700,
+    black:900
+);
+
+$transparent-bg:(
+    8:rgba(0,0,0,0.8),
+    7:rgba(0,0,0,0.7),
+    6:rgba(0,0,0,0.6),
+    5:rgba(0,0,0,0.5),
+    4:rgba(0,0,0,0.4),
+    3:rgba(0,0,0,0.3),
+    2:rgba(0,0,0,0.2),
+    1:rgba(0,0,0,0.1),
+);
+
+$backgrounds:(
+    "dark": #181818,
+    "white": #fff,
+);

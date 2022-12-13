@@ -1,0 +1,31 @@
+@import "../utilities/variables";
+
+.pie-footer{
+    padding: 2rem 0;
+    .container{
+        text-align: $text-center;
+        .footer-logo{
+            height: 40px;
+
+            @include mobile{
+                height: 30px;
+            }
+        }
+        .iconos{
+            font-size: 1.3rem;
+            margin: 0 20px;
+            color: $color-white;
+            padding: 20px 0;
+            &:hover{
+                color: $color-hover;
+                transition: $transicion-hover; 
+            }
+        }
+        .footer_parrafo{
+            @include parrafoEstilado($fuente-chiquita,map-get($fuentes,regular),$color-white);
+            @include mobile-small{
+                font-size: $fuente-peque;
+            }
+        }
+    }
+}

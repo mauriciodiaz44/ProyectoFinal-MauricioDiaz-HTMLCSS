@@ -1,0 +1,51 @@
+#videos{
+    @include banner($banner-musica);
+    padding-bottom: $espaciado-secundario;
+    .video-embed{
+        padding-top: $espaciado-principal;
+        @include centrarContenido;
+        iframe{
+            box-shadow: 1px 1px 41px 6px rgba(0,0,0,0.71);
+            -webkit-box-shadow: 1px 1px 41px 6px rgba(0,0,0,0.71);
+            -moz-box-shadow: 1px 1px 41px 6px rgba(0,0,0,0.71);
+        }
+        .col-md-5{
+            @include mobile{
+                padding: 2rem 0;
+            }
+            .h4{
+                font-weight: map-get($fuentes,bold);
+            }
+        }
+    }
+    .titulo_videos{
+        padding-top: $espaciado-secundario;
+    }
+    .card-video{
+        overflow: hidden;
+        position: relative;
+        width: $ancho;
+        border: $borde;
+        img{
+            width: $ancho;
+            z-index: 1;
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
+        .card-content {
+            @include flex-direction-center(column);
+            text-align: $text-center;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            width: $ancho;
+            height: $alto;
+            background: map-get($transparent-bg,8);
+            opacity: 0;
+            transition: $transicion;
+        }
+    }
+    .card-video:hover .card-content{
+        opacity: 1;
+    }
+}
