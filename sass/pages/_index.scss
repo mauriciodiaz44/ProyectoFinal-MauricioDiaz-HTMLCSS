@@ -49,7 +49,7 @@
         }
     }
     .featurette{
-        @include centrarContenido;
+        @include centrarContenido (center);
         .col-lg-7{
             text-align: $text-center;
             .parrafo{

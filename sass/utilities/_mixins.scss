@@ -29,9 +29,9 @@
 	justify-content:center;
 }
 
-@mixin centrarContenido {
+@mixin centrarContenido ($justify){
     display: flex;
-    justify-content: center;
+    justify-content: $justify;
     align-items: center;
 }
 

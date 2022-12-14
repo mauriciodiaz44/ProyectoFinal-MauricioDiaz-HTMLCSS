@@ -29,7 +29,7 @@
             padding: 0.5rem 0;
         }
         .col-md-3, .col-md-5{
-            @include centrarContenido;
+            @include centrarContenido(center);
             background-color: $color-white;
             padding: 0.5rem 0;
             h5{

@@ -44,7 +44,14 @@
                 padding: 2em 1em;
                 width: $ancho;
                 z-index: 3;
-                text-align: $text-align-start;
+                text-align: start;
+                @include centrarContenido(space-between);
+                .profile_content_redes{
+                    @include flex-direction-center(column);
+                    .redes{
+                        font-size: 1.2rem;
+                    }
+                }
             }
             &:before{
                 @include before;

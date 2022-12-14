@@ -3,7 +3,7 @@
     padding-bottom: $espaciado-secundario;
     .video-embed{
         padding-top: $espaciado-principal;
-        @include centrarContenido;
+        @include centrarContenido(center);
         iframe{
             box-shadow: 1px 1px 41px 6px rgba(0,0,0,0.71);
             -webkit-box-shadow: 1px 1px 41px 6px rgba(0,0,0,0.71);

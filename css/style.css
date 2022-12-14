@@ -397,7 +397,16 @@ header .navbar {
         padding: 2em 1em;
         width: 100%;
         z-index: 3;
-        text-align: start; }
+        text-align: start;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #nosotros .row .profile .profile_content .profile_content_redes {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          #nosotros .row .profile .profile_content .profile_content_redes .redes {
+            font-size: 1.2rem; }
       #nosotros .row .profile:before {
         content: '';
         position: absolute;
